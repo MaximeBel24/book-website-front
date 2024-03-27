@@ -41,7 +41,6 @@ if(loginClose){
 }
 
 /*=============== ADD SHADOW HEADER ===============*/
-
 const shadowHeader = () => {
     const header = document.querySelector('.header')
     this.scrollY >= 50 ? header.classList.add('shadow-header')
@@ -92,7 +91,22 @@ let swiperFeatured = new Swiper('.featured__swiper', {
   });
 
 /*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.new__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    slidesPerView: 'auto',
 
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+
+    breakpoints: {
+        1150: {
+            slidesPerView: 3,
+        }
+    }
+  });
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 
