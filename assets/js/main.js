@@ -97,7 +97,7 @@ let swiperNew = new Swiper('.new__swiper', {
     slidesPerView: 'auto',
 
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
 
@@ -109,7 +109,20 @@ let swiperNew = new Swiper('.new__swiper', {
   });
 
 /*=============== TESTIMONIAL SWIPER ===============*/
+let swiperTestimonial = new Swiper('.testimonial__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
 
+    breakpoints: {
+        1150: {
+            slidesPerView: 3,
+            centeredSlides: false,
+        }
+    }
+  });
 
 /*=============== SHOW SCROLL UP ===============*/ 
 
